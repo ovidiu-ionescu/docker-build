@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Ovidiu Ionescu <ovidiu@ionescu.net>"]
 description = "Build Dockerfile and script from Cargo.toml for a Rust workspace project"
+license = "AGPL-3.0-or-later"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
