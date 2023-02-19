@@ -12,7 +12,15 @@ sources and produce the images.
 
 The images will have labels with information extracted from `Cargo.toml`
 
-A shell file `build_docker.sh` will be generated that will invoke the Dockerfile creation
+A shell file `build_docker.sh` will be generated. 
+When run, it will invoke the Dockerfile creation
 and will tag the newly created images using the labels in the images.
 
-The program will only do the file generation, it will not run anything.
+The program will only do the file generation, it will not run anything so
+you need to run the `build_docker.sh` manually.
+
+## Installation
+This program is meant to run as a Cargo subcommand. To install it from source, run:
+```bash
+cargo install --path .
+```
