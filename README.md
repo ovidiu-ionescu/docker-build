@@ -8,7 +8,10 @@ It generates two files:
 
 When ran from the root of a workspace project, the program will read the `Cargo.toml` 
 files from every subproject and create a multi stage `Dockerfile`, that can compile the 
-sources and produce the images.
+sources and produce the images.\
+The ones with the name starting with `lib` will be ignored.
+
+If the project is not a workspace, it will only generate for the current project.
 
 The images will have labels with information extracted from `Cargo.toml`
 
@@ -22,5 +25,7 @@ you need to run the `build_docker.sh` manually.
 ## Installation
 This program is meant to run as a Cargo subcommand. To install it from source, run:
 ```bash
+git clone git@github.com:ovidiu-ionescu/docker-build.git
+cd docker-build
 cargo install --path .
 ```

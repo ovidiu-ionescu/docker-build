@@ -1,0 +1,9 @@
+# Source of rustfmt: rustfmt.toml
+# Documentation for options: https://rust-lang.github.io/rustfmt
+
+#edition = "2021"
+# align members in structs
+struct_field_align_threshold = 20
+
+# when initializing structs, don't specify the name if the variable name is same as field
+use_field_init_shorthand = true
