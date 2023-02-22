@@ -1,6 +1,6 @@
 [package]
 name = "cargo-docker-build"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 authors = ["Ovidiu Ionescu <ovidiu@ionescu.net>"]
 description = "Build Dockerfile and script from Cargo.toml for a Rust workspace project"
@@ -14,6 +14,7 @@ serde = "1.0"
 serde_derive = "1.0"
 toml = "0.5"
 clap = { version = "4", features = ["derive", "cargo"] }
+indoc = "2"
 
 [profile.release]
 lto = true
